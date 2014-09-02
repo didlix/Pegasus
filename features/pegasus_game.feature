@@ -8,3 +8,8 @@ Scenario: Start Game
   Given a state of procrastination
   And I start the game
   Then I should see the game world
+
+Scenario: Take turn
+  Given I start the game
+  And I take a turn
+  Then the game state should change
