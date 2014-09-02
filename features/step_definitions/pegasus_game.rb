@@ -7,5 +7,5 @@ Given(/^I start the game$/) do
 end
 
 Then(/^I should see the game world$/) do
-  pending # express the regexp above with the code you wish you had
+  expect(@game.render).to eq("world")
 end
