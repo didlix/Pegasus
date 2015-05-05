@@ -1,6 +1,9 @@
 module Pegasus
 
   require_relative './world.rb'
+  require_relative './board.rb'
+  require_relative './space.rb'
+  require_relative './ship.rb'
 
   class Game
 
@@ -16,7 +19,7 @@ module Pegasus
     end
 
     def turn!
-      turn = 1
+      self.turn = 1
     end
 
   end
